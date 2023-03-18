@@ -3,11 +3,13 @@ from tuya_connector import TuyaOpenAPI, TUYA_LOGGER
 
 from flask import Flask, request
 from dotenv import load_dotenv
+from flask_cors import CORS
 import os
 
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 API_ENDPOINT = os.getenv('API_ENDPOINT')
 ACCESS_ID = os.getenv('ACCESS_ID')
