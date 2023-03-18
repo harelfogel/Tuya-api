@@ -35,10 +35,6 @@ def control_device():
 
     data = request.json
 
-    # Expect body: {
-    #     "code": "switch_1",
-    #     "value": true/false
-    # }
     commands = {'commands': [data]}
     return openapi.post('/v1.0/iot-03/devices/{}/commands'.format(DEVICE_ID), commands)
 
