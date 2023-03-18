@@ -1,0 +1,9 @@
+requests~=2.28.2
+pycryptodome
+tuya-connector-python
+websocket-client~=1.5.1
+
+Flask~=2.2.3
+waitress~=2.1.2
+setuptools~=60.2.0
+python-dotenv~=1.0.0
